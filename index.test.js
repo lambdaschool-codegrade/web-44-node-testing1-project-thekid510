@@ -8,16 +8,24 @@ describe('[Exercise 1] trimProperties', () => {
     const actual = utils.trimProperties(input)
     expect(actual).toEqual(expected)
   })
+  test('[2] returns a copy, leaving the original object intact', () => {
+    const input = { foo: '  foo ', bar: 'bar ', baz: ' baz' }
+    utils.trimProperties(input)
+      expect(input).toEqual({ foo: '  foo ', bar: 'bar ', baz: ' baz' })
+  })
   // test('[2] returns a copy, leaving the original object intact', () => {})
 })
 
 describe('[Exercise 2] trimPropertiesMutation', () => {
   // test('[3] returns an object with the properties trimmed', () => {})
   // test('[4] the object returned is the exact same one we passed in', () => {})
+  test.todo('[3] returns an object with the properties trimmed')
+  test.todo('[4] the object returned is the exact same one we passed in')
 })
 
 describe('[Exercise 3] findLargestInteger', () => {
   // test('[5] returns the largest number in an array of objects { integer: 2 }', () => {})
+  test.todo('[5] returns the largest number in an array of objects { integer: 2 }')
 })
 
 describe('[Exercise 4] Counter', () => {
@@ -25,6 +33,9 @@ describe('[Exercise 4] Counter', () => {
   beforeEach(() => {
     counter = new utils.Counter(3) // each test must start with a fresh couter
   })
+  test.todo('[6] the FIRST CALL of counter.countDown returns the initial count')
+  test.todo('[7] the SECOND CALL of counter.countDown returns the initial count minus one')
+  test.todo('[8] the count eventually reaches zero but does not go below zero')
   // test('[6] the FIRST CALL of counter.countDown returns the initial count', () => {})
   // test('[7] the SECOND CALL of counter.countDown returns the initial count minus one', () => {})
   // test('[8] the count eventually reaches zero but does not go below zero', () => {})

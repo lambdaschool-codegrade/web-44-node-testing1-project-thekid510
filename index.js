@@ -8,8 +8,12 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  const result = {}
+  for(let prop in obj){
+    result[prop] = obj[prop].trim()
+  }
+  return result
 }
-
 /**
  * [Exercise 2] trimPropertiesMutation trims in place the properties of an object
  * @param {object} obj - an object with properties that are strings
